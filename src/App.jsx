@@ -24,7 +24,6 @@ import Confirm2 from './pages/Confirm2';
 import Login from './pages/Login';
 import Daftar from './pages/Daftar';
 import KonfirmasiEmail from './pages/KonfirmasiEmail';
-import Berhasil from './pages/Berhasil';
 import ProfilePage from './pages/ProfilePage'; 
 import EditProfilePage from './pages/EditProfilePage'; 
 import ChangePassword from './pages/ChangePassword'; 
@@ -89,7 +88,6 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/daftar" element={<Daftar />} />
         <Route path="/konfirmasi-email" element={<KonfirmasiEmail />} />
-        <Route path="/berhasil" element={<Berhasil />} />
         <Route path="/profil" element={<ProfilePage />} />
         <Route path="/profil/edit" element={<EditProfilePage />} />
         <Route path="/ganti-kata-sandi" element={<ChangePassword />} />

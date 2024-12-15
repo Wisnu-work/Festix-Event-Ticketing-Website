@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar";
 import { Table, Badge } from "react-bootstrap";
-import orders from "../data/ordersData";
+import orders from "../data/OrdersData";
 import { Link } from "react-router-dom";
 import "../styles/Admin.css";
 

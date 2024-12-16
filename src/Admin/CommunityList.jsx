@@ -34,7 +34,7 @@ const CommunityList = () => {
 
   const fetchCommunities = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/communities");
+      const response = await axios.get("https://8xperience.celerateskampusmerdeka.site/communities");
       setCommunities(response.data);
     } catch (error) {
       console.error("Failed to fetch communities:", error);
@@ -61,10 +61,10 @@ const CommunityList = () => {
         image: form.image ? form.image : "/public/images/",
       };
       if (editId) {
-        await axios.put(`http://localhost:5000/communities/${editId}`, updatedForm);
+        await axios.put(`https://8xperience.celerateskampusmerdeka.site/communities/${editId}`, updatedForm);
         alert("Community updated successfully");
       } else {
-        await axios.post("http://localhost:5000/communities", updatedForm);
+        await axios.post("https://8xperience.celerateskampusmerdeka.site/communities", updatedForm);
         alert("Community added successfully");
       }
       setForm({
@@ -92,7 +92,7 @@ const CommunityList = () => {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this community?")) {
       try {
-        await axios.delete(`http://localhost:5000/communities/${id}`);
+        await axios.delete(`https://8xperience.celerateskampusmerdeka.site/communities/${id}`);
         alert("Community deleted successfully");
         fetchCommunities();
       } catch (error) {

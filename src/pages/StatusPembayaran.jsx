@@ -27,7 +27,7 @@ const StatusPembayaran = () => {
           throw new Error("Token tidak ditemukan. Harap login kembali.");
         }
   
-        const response = await axios.get("http://localhost:5000/api/auth/profile", {
+        const response = await axios.get("https://8xperience.celerateskampusmerdeka.site/api/auth/profile", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

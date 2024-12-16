@@ -10,7 +10,7 @@ const PilihanTiket = () => {
 
   useEffect(() => {
     // Fetch data event dan tiket dari backend
-    fetch(`http://localhost:5000/events/${id}`)
+    fetch(`https://8xperience.celerateskampusmerdeka.site/events/${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Gagal mengambil data event");

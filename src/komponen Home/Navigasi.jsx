@@ -39,7 +39,7 @@ function Navigasi() {
     const token = localStorage.getItem('token');
     try {
       await axios.post(
-        'http://localhost:5000/api/auth/logout',
+        'https://8xperience.celerateskampusmerdeka.site/api/auth/logout',
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );

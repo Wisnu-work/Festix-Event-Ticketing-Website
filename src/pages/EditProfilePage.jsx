@@ -22,7 +22,7 @@ function EditProfilePage() {
     }
 
     axios
-      .get("http://localhost:5000/api/auth/profile", {
+      .get("https://8xperience.celerateskampusmerdeka.site/api/auth/profile", {
         headers: { Authorization: token },
       })
       .then((response) => {
@@ -52,7 +52,7 @@ function EditProfilePage() {
     const token = localStorage.getItem("token");
 
     axios
-      .put("http://localhost:5000/api/auth/profile", formData, {
+      .put("https://8xperience.celerateskampusmerdeka.site/api/auth/profile", formData, {
         headers: { Authorization: token },
       })
       .then((response) => {

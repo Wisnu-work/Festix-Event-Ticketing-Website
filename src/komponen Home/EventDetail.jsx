@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios"; // Import axios untuk request HTTP
 import Navbar from "../komponen Home/Navigasi"; // Import Navbar
 
-const API_URL = "http://localhost:5000/events"; // URL API untuk mengambil event
+const API_URL = "https://8xperience.celerateskampusmerdeka.site/events"; // URL API untuk mengambil event
 
 const EventDetail = () => {
   const { id } = useParams(); // Ambil parameter ID dari URL

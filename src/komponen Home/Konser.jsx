@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import EventCard from "../komponen Home/EventCard"; // Pastikan path sesuai
 import axios from "axios"; // Untuk HTTP request
 
-const API_URL = "http://localhost:5000/events"; // URL endpoint API
+const API_URL = "https://8xperience.celerateskampusmerdeka.site/events"; // URL endpoint API
 
 const Konser = () => {
   const [isHovered, setIsHovered] = useState(false); // State untuk hover effect

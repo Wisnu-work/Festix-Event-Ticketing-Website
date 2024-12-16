@@ -29,7 +29,7 @@ const BlogList = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/blogs");
+      const response = await axios.get("https://8xperience.celerateskampusmerdeka.site/blogs");
       setBlogs(response.data);
     } catch (error) {
       console.error("Failed to fetch blogs:", error);
@@ -57,10 +57,10 @@ const BlogList = () => {
         image: form.image || "/public/images/default.jpg",
       };
       if (editId) {
-        await axios.put(`http://localhost:5000/blogs/${editId}`, updatedForm);
+        await axios.put(`https://8xperience.celerateskampusmerdeka.site/blogs/${editId}`, updatedForm);
         alert("Blog updated successfully");
       } else {
-        await axios.post("http://localhost:5000/blogs", updatedForm);
+        await axios.post("https://8xperience.celerateskampusmerdeka.site/blogs", updatedForm);
         alert("Blog added successfully");
       }
       setForm({
@@ -90,7 +90,7 @@ const BlogList = () => {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this blog?")) {
       try {
-        await axios.delete(`http://localhost:5000/blogs/${id}`);
+        await axios.delete(`https://8xperience.celerateskampusmerdeka.site/blogs/${id}`);
         alert("Blog deleted successfully");
         fetchBlogs();
       } catch (error) {

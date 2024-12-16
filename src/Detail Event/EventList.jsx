@@ -3,7 +3,7 @@ import EventCard from "../komponen Home/EventCard"; // Pastikan path benar
 import SearchBar from "../Detail Event/SearchBar"; // Pastikan path benar
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/events"; // Endpoint API Anda
+const API_URL = "https://8xperience.celerateskampusmerdeka.site/events"; // Endpoint API Anda
 
 const EventList = () => {
   const [events, setEvents] = useState([]);

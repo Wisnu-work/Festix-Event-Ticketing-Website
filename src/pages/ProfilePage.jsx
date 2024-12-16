@@ -33,7 +33,7 @@ function ProfilePage() {
 
     // Ambil data pengguna dari backend
     axios
-      .get("http://localhost:5000/api/auth/profile", {
+      .get("https://8xperience.celerateskampusmerdeka.site/api/auth/profile", {
         headers: { Authorization: token },
       })
       .then((response) => {
@@ -87,7 +87,7 @@ function ProfilePage() {
     }
   
     axios
-      .get("http://localhost:5000/api/auth/profile", {
+      .get("https://8xperience.celerateskampusmerdeka.site/api/auth/profile", {
         headers: { Authorization: token },
       })
       .then((response) => {

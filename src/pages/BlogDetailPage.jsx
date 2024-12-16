@@ -11,7 +11,7 @@ const BlogDetailPage = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/blogs/${id}`); // Endpoint backend
+        const response = await fetch(`https://8xperience.celerateskampusmerdeka.site/blogs/${id}`); // Endpoint backend
         if (!response.ok) {
           throw new Error('Blog tidak ditemukan');
         }

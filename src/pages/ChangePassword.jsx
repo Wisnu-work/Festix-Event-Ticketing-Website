@@ -26,7 +26,7 @@ function ChangePassword() {
 
     axios
       .put(
-        "http://localhost:5000/api/auth/change-password",
+        "https://8xperience.celerateskampusmerdeka.site/api/auth/change-password",
         {
           oldPassword: formData.oldPassword,
           newPassword: formData.newPassword,

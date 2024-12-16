@@ -39,7 +39,7 @@ CREATE TABLE `blogs` (
   `content` text,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 --
 -- Dumping data for table `blogs`
@@ -69,7 +69,7 @@ CREATE TABLE `communities` (
   `category` enum('Pop','Rock','Lainnya') NOT NULL,
   `image` varchar(255) DEFAULT NULL,
   `whatsappLink` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 --
 -- Dumping data for table `communities`
@@ -101,7 +101,7 @@ CREATE TABLE `events` (
   `description` text,
   `image` varchar(255) DEFAULT NULL,
   `additionalImage` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 --
 -- Dumping data for table `events`
@@ -136,7 +136,7 @@ CREATE TABLE `tickets` (
   `price` decimal(10,2) NOT NULL,
   `benefits` text,
   `stock` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Dumping data for table `tickets`
@@ -174,7 +174,7 @@ CREATE TABLE `ticket_purchases` (
   `ticket_id` int NOT NULL,
   `quantity` int NOT NULL,
   `purchase_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 -- --------------------------------------------------------
 
@@ -190,7 +190,7 @@ CREATE TABLE `users` (
   `phone` varchar(20) NOT NULL,
   `birth_date` date NOT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 --
 -- Dumping data for table `users`

@@ -7,7 +7,7 @@ import "../styles/Admin.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 
-const API_URL = "http://localhost:5000/events";
+const API_URL = "https://8xperience.celerateskampusmerdeka.site/events";
 
 const formatRupiah = (value) => {
   if (!value || isNaN(value)) return "Rp 0";
@@ -121,7 +121,7 @@ const EventList = () => {
         const eventId = response.data.eventId;
         if (eventId && formData.tickets.length > 0) {
             const ticketPromises = formData.tickets.map(ticket => 
-                axios.post("http://localhost:5000/tickets", {
+                axios.post("https://8xperience.celerateskampusmerdeka.site/tickets", {
                     event_id: eventId,
                     ...ticket,
                 })
@@ -158,7 +158,7 @@ const EventList = () => {
     if (window.confirm('Apakah Anda yakin ingin menghapus tiket ini?')) {
       try {
         console.log(`Menghapus tiket dengan ID: ${ticketId}`); // Debugging log
-        await axios.delete(`http://localhost:5000/tickets/${ticketId}`);
+        await axios.delete(`https://8xperience.celerateskampusmerdeka.site/tickets/${ticketId}`);
         
         // Perbarui state acara untuk menghapus tiket dari daftar
         setEvents((prevEvents) =>

@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import EventCard from './EventCard'; // Import EventCard
 import axios from 'axios'; // Import axios untuk HTTP request
 
-const API_URL = "http://localhost:5000/events"; // URL endpoint API
+const API_URL = "https://8xperience.celerateskampusmerdeka.site/events"; // URL endpoint API
 
 const Mid = () => {
   const [popularEvents, setPopularEvents] = useState([]); // Data populer

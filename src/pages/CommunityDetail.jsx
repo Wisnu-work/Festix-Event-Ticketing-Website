@@ -11,7 +11,7 @@ const CommunityDetail = () => {
   useEffect(() => {
     const fetchCommunity = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/communities/${id}`);
+        const response = await axios.get(`https://8xperience.celerateskampusmerdeka.site/communities/${id}`);
         setCommunity(response.data);
       } catch (error) {
         console.error("Error fetching community details:", error);

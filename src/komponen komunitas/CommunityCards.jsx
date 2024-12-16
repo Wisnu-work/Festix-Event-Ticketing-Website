@@ -15,7 +15,7 @@ const CommunityCards = () => {
   // Ambil data dari backend
   useEffect(() => {
     axios
-      .get("http://localhost:5000/communities")
+      .get("https://8xperience.celerateskampusmerdeka.site/communities")
       .then((response) => setCommunities(response.data))
       .catch((error) => console.error("Gagal mengambil data:", error));
   }, []);

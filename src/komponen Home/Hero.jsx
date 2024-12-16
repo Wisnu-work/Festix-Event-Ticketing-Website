@@ -7,11 +7,11 @@ import image5 from '../assets/THE-SIGIT-2.jpg';
 
 const Hero = () => {
   const slides = [
-    { id: 1, src: image1, alt: 'Home Image', title: 'Sound Of Downtown', date: 'Jumat, 27 Oktober 2024 | Jakarta Arena', link: '/event/23' },
-    { id: 2, src: image2, alt: 'Variant 5', title: 'Sound Of Downtown', date: 'Sabtu, 28 Oktober 2024 | Bandung Stadium', link: '/detail-konser-b' },
-    { id: 3, src: image3, alt: 'Variant 6', title: 'Sound Of Downtown', date: 'Minggu, 29 Oktober 2024 | Surabaya Hall', link: '/detail-konser-c' },
-    { id: 4, src: image4, alt: 'Variant 7', title: 'Sound Of Downtown', date: 'Senin, 30 Oktober 2024 | Medan Arena', link: '/detail-konser-d' },
-    { id: 5, src: image5, alt: 'The Sigit', title: 'Sound Of Downtown', date: 'Selasa, 31 Oktober 2024 | Yogyakarta Stage', link: '/detail-konser-e' },
+    { id: 1, src: image1, alt: 'Home Image', title: 'Sound Of Downtown', date: 'Jumat, 27 Oktober 2024 | Jakarta Arena', link: '/event/22' },
+    { id: 2, src: image2, alt: 'Variant 5', title: 'Sound Festival', date: 'Sabtu, 28 Oktober 2024 | Bandung Stadium', link: '/event/53' },
+    { id: 3, src: image3, alt: 'Variant 6', title: 'We The Fest 2024', date: 'Minggu, 29 Oktober 2024 | Surabaya Hall', link: '/event/57' },
+    { id: 4, src: image4, alt: 'Variant 7', title: 'Reality Club - Am I Bothering You?', date: 'Senin, 30 Oktober 2024 | Medan Arena', link: '/event/50' },
+    { id: 5, src: image5, alt: 'The Sigit', title: 'Tunggu Aku di Surabaya', date: 'Selasa, 31 Oktober 2024 | Yogyakarta Stage', link: '/event/52' },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

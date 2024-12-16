@@ -18,7 +18,6 @@ import BlogDetailPage from './pages/BlogDetailPage';
 import Komunitas from './pages/Komunitas';
 import CommunityDetail from './pages/CommunityDetail';
 import PilihanTiket from './pages/PilihanTiket';
-import Tiket from './pages/Tiket';
 import Confirm from './pages/Confirm';
 import Confirm2 from './pages/Confirm2';
 import Login from './pages/Login';
@@ -65,7 +64,6 @@ function App() {
 
         {/* Detail Konser dan Tiket */}
         <Route path="/event/:id/tiket" element={<PilihanTiket />} />
-        <Route path="/tiket/:price" element={<Tiket />} />
 
         {/* Pembayaran */}
         <Route path="/metode-pembayaran" element={<MetodePembayaran />} /> {/* Rute baru */}

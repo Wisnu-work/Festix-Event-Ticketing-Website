@@ -115,23 +115,24 @@ function Navigasi() {
             </Nav.Link>
 
             <Nav.Item style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <Button
-                variant="link"
-                className="btn light rounded-circle"
-                style={{
-                  backgroundColor: '#FFCF00',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  padding: '12px',
-                  width: '50px',
-                  height: '50px',
-                  borderRadius: '50%',
-                  border: '2px solid black',
-                }}
+            <Button
+              variant="link"
+              className="btn light rounded-circle"
+              style={{
+                backgroundColor: '#FFCF00',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                padding: '12px',
+                width: '50px',
+                height: '50px',
+                borderRadius: '50%',
+                border: '2px solid black',
+              }}
+              onClick={() => navigate('/tiket-page')}
               >
-                <img src={ticket} alt="Ticket" style={{ width: '20px', height: '20px' }} />
-              </Button>
+              <img src={ticket} alt="Ticket" style={{ width: '20px', height: '20px' }} />
+            </Button>
 
               {isLoggedIn ? (
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>

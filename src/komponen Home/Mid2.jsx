@@ -16,7 +16,7 @@ const MID2 = () => {
   const navigate = useNavigate();
 
   const handleGenreClick = (genre) => {
-    navigate(`/kategori?genre=${genre}`);
+    navigate(`/event`);
   };
 
   return (

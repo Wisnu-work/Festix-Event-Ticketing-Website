@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 15, 2024 at 03:21 PM
+-- Generation Time: Dec 17, 2024 at 03:24 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -39,7 +39,7 @@ CREATE TABLE `blogs` (
   `content` text,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `blogs`
@@ -69,7 +69,7 @@ CREATE TABLE `communities` (
   `category` enum('Pop','Rock','Lainnya') NOT NULL,
   `image` varchar(255) DEFAULT NULL,
   `whatsappLink` varchar(255) DEFAULT NULL
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `communities`
@@ -101,7 +101,7 @@ CREATE TABLE `events` (
   `description` text,
   `image` varchar(255) DEFAULT NULL,
   `additionalImage` varchar(255) DEFAULT NULL
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `events`
@@ -116,12 +116,11 @@ INSERT INTO `events` (`id`, `title`, `date`, `location`, `price`, `genre`, `type
 (51, 'Pekan Gembira Ria', '2024-12-13', 'Jakarta', 120000.00, 'Pop', 'Festival', 'Pekan Gembira', '/images/pekan.jpg', '/public/images/pekandetail.jpg'),
 (52, 'Java Jazz 2024', '2024-12-20', 'Jakarta', 300000.00, 'Lainnya', 'Festival', 'Java Jazz 2024 adalah festival jazz terbesar di Indonesia yang akan diselenggarakan di jakarta', '/images/java.webp', '/public/images/javadetail.jpg'),
 (53, 'Sod', '2024-12-14', 'Bandung', 120000.00, 'Pop', 'Festival', 'Gada', '/images/java.webp', '/public/images/sod.png'),
-(54, 'Wisnu', '2024-01-13', 'Jakarta', 200000.00, 'Pop', 'Konser', 'Gaada', '/images/kmrc.png', '/images/soddetail.png'),
+(54, 'Pekan Raya Festival', '2024-12-17', 'Jakarta', 200000.00, 'Pop', 'Konser', 'Gaada', '/images/kmrc.png', '/images/soddetail.png'),
 (55, 'Aprilia', '2024-12-14', 'Gresik', 300000.00, 'Pop', 'Festival', 'Bebas', '/images/tiba.png', '/images/tibadetail.png'),
 (56, 'Mahalini', '2024-12-16', 'Jakarta', 500000.00, 'Pop', 'Konser', 'terserah', '/images/rc.jpg', '/images/rcdetail.jpg'),
 (57, 'Festix', '2024-12-15', 'Surabaya', 120000.00, 'Pop', 'Festival', 'Gaada', '/images/moot.png', '/images/pekandetail.jpg'),
-(58, 'Maliq', '2024-12-31', 'Magetan', 100000.00, 'Jazz', 'Konser', 'Gaada', '/public/images/sod.png', '/public/images/sod.png'),
-(59, 'I love you', '2024-12-16', 'Madiun', 200000.00, 'Pop', 'Festival', 'Gaada', '/images/moot.png', '/images/wib.png');
+(58, 'Maliq', '2024-12-31', 'Magetan', 100000.00, 'Jazz', 'Konser', 'Gaada', '/public/images/sod.png', '/public/images/sod.png');
 
 -- --------------------------------------------------------
 
@@ -136,7 +135,7 @@ CREATE TABLE `tickets` (
   `price` decimal(10,2) NOT NULL,
   `benefits` text,
   `stock` int NOT NULL
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `tickets`
@@ -158,8 +157,7 @@ INSERT INTO `tickets` (`id`, `event_id`, `type`, `price`, `benefits`, `stock`) V
 (108, 54, 'Reguler', 200000.00, 'Gaada', 12),
 (110, 56, 'Ultra Violence', 1000000.00, 'Dapat ,merch', 80),
 (111, 56, 'Reguler', 500000.00, 'Gada', 150),
-(112, 57, 'VVIP', 300000.00, 'Gaada', 100),
-(113, 59, 'VVIP', 200000.00, 'Gaada', 80);
+(112, 57, 'VVIP', 300000.00, 'Gaada', 100);
 
 -- --------------------------------------------------------
 
@@ -174,7 +172,7 @@ CREATE TABLE `ticket_purchases` (
   `ticket_id` int NOT NULL,
   `quantity` int NOT NULL,
   `purchase_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -190,7 +188,7 @@ CREATE TABLE `users` (
   `phone` varchar(20) NOT NULL,
   `birth_date` date NOT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `users`

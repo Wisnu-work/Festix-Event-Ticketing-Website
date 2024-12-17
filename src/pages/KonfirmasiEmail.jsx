@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom"; // Import untuk navigasi
 import "./KonfirmasiEmail.css"; // File CSS untuk styling
-import FestixLogo from "../assets/FestixLogo 3.png";
+import FestixLogo from "../assets/FesTixLog-3.png";
 import BackgroundImage from "../assets/Unsplash.svg";
 
 const KonfirmasiEmail = () => {

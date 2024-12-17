@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Login.css";
-import FestixLogo from "../assets/FestixLogo 3.png";
+import FestixLogo from "../assets/FesTixLog-3.png";
 import UnsplashBackground from "../assets/Unsplash.svg";
 
 function Login() {
